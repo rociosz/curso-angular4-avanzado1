@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter, OnChanges, SimpleChanges} from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnChanges, SimpleChanges, OnInit} from '@angular/core';
 
 @Component({
   selector: 'parques',
@@ -24,6 +24,10 @@ export class ParquesComponent implements OnChanges, OnInit {
     console.log("Existen cambios en las propiedades");
   }
 
+  ngOnInit() {
+    console.log('Metodo on init lanzado');
+  }
+
   emitirEvento(){
     this.pasameLosDatos.emit({
           'nombre': this.nombre,
@@ -32,8 +36,5 @@ export class ParquesComponent implements OnChanges, OnInit {
           'abierto': this.abierto
     });
   }
-
-  ngOnInit() {
-  }
-
+  
 }
