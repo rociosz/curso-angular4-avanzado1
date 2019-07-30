@@ -19,4 +19,10 @@ export class AppComponent implements DoCheck, OnInit{
     this.emailContacto = localStorage.getItem('emailContacto');
   }
 
+  borrarEmail(){
+    localStorage.removeItem('emailContacto');
+    localStorage.clear();
+    this.emailContacto = null;
+  }
+
 }
