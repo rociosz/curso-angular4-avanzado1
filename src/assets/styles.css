@@ -6,6 +6,9 @@
     border-radius: 5px;
     box-shadow: 2px 2px 1px #cccccc;
 }
+.navbar-nav .active{
+    border-bottom: 3px solid #0948f7!important;
+}
 
 /*Iconos*/
 .glyphicon {
