@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TiendaComponent implements OnInit {
   public titulo;
+  public nombreDelParque: string;
 
   constructor() {
     this.titulo = 'Esta es la Tienda de Uniformes Escolares';
