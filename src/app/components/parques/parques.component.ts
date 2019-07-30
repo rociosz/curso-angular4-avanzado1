@@ -4,7 +4,7 @@ import { Component, Input, Output, EventEmitter, OnChanges, SimpleChanges, OnIni
   selector: 'parques',
   templateUrl: './parques.component.html'
 })
-export class ParquesComponent implements OnChanges, OnInit {
+export class ParquesComponent implements OnChanges, OnInit{
   @Input() nombre: string;
   @Input('metros_cuadrados') metros: number;
   public vegetacion: string;
@@ -36,5 +36,5 @@ export class ParquesComponent implements OnChanges, OnInit {
           'abierto': this.abierto
     });
   }
-  
+
 }
