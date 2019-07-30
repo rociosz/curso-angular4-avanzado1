@@ -9,7 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Importar nuestros nuevos modulos
 import { ModuloEmailModule } from './moduloemail/moduloemail.module';
-//import { AdminModule } from './admin/admin.module';
+import { AdminModule } from './admin/admin.module';
 
 //Componentes//
 import { AppComponent } from './app.component';
@@ -34,7 +34,7 @@ import { AlumnosComponent } from './components/alumnos/alumnos.component';
   imports: [
     BrowserModule,
     ModuloEmailModule,
-    //AdminModule,
+    AdminModule,
     FormsModule,
     HttpClientModule,
     routing,
