@@ -39,6 +39,61 @@
     border: 1px solid #ff0000;
 }
 
+/*Animaciones*/
+.caja-animada{
+    margin-top: 15px;
+    background: #cccccc;
+    border: 2px solid #0948f7;
+    width: 100px;
+    height: 100px;
+    /*animation-name: rotacion;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;*/
+}
+@keyframes rotacion{
+    0% { 
+        margin-left: 0px;
+        transform: rotate(0deg);
+    }
+    50% { 
+        transform: rotate(360deg);
+        margin-left: 600px;
+    }
+    100%{
+        margin-left: 0px;
+        transform: rotate(0deg);
+    }
+}
+@keyframes desplazamiento{
+    0% { 
+        margin-left: 0px;
+    }
+    25% { 
+        margin-left: 400px;
+        background: #00fff0;
+    }
+    50%{
+        border-radius: 1000px;
+    }
+    75%{
+        margin-left: 0px;
+        background: #fff900;
+        border-radius: 0px;
+    }
+    100%{
+        background: #cccccc;
+    }
+}
+@keyframes desplazamiento1{
+    from { 
+        margin-left: 0px;
+    }
+    to { 
+        margin-left: 400px;
+        background: #00fff0;
+    }
+}
+
 /*Iconos*/
 .glyphicon {
     right: 4px;
