@@ -32,6 +32,7 @@ export class TiendaComponent implements OnInit {
         console.log('click desde JQUERY');
         $('#textojq').slideToggle();
      });
+      $("#caja").dotdotdot({});
   }
 
 }
