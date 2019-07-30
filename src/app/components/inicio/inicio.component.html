@@ -1,1 +1,13 @@
-<h1>{{title}}</h1>
+<div class="col-lg-8 col-lg-offset-2">
+    <div class="jumbotron">
+        <h1>{{title}}</h1>
+        <p>Disfruta de los cursos que se enseñan en el Colegio</p>
+        <p>
+            <a class="btn btn-primary btn-lg" role="button" [routerLink]="['/alumnos']">Ver Alumnos</a>
+            <a class="btn btn-success btn-lg" role="button" [routerLink]="['/profesores']">Ver Profesores</a>
+            <a class="btn btn-warning btn-lg" role="button" [routerLink]="['/contacto']">Contacta con Nosotros</a>
+        </p>
+    </div>
+</div>
+
+<div class="clearfix"></div>

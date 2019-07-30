@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'inicio',
-  templateUrl: './inicio.component.html',
-  styleUrls: ['./inicio.component.css']
+  templateUrl: './inicio.component.html'
 })
 export class InicioComponent implements OnInit {
-  title = 'Inicio';
+  title = 'Bienvenido al COLEGIO';
+  
   constructor() { }
 
   ngOnInit() {
