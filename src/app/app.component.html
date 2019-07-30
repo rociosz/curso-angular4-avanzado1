@@ -8,6 +8,11 @@
 <a [routerLink]="['/tienda']">Tienda</a>
 <a [routerLink]="['/contacto']">Contacto</a>
 
+<span *ngIf="emailContacto">
+  <strong>Email de Contacto:</strong>{{emailContacto}}
+  <button (click)="borrarEmail()">Eliminar Email de Contacto</button>
+</span>
+
 <hr>
 
 <!--<tienda></tienda>-->
