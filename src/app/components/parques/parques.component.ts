@@ -1,12 +1,12 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
 
 @Component({
   selector: 'parques',
   templateUrl: './parques.component.html'
 })
 export class ParquesComponent implements OnInit {
-  public nombre: string;
-  public metros: number;
+  @Input() nombre: string;
+  @Input('metros_cuadrados') metros: number;
   public vegetacion: string;
   public abierto: boolean;
 

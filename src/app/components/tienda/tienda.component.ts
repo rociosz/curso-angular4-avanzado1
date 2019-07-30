@@ -13,6 +13,10 @@ export class TiendaComponent implements OnInit {
     this.titulo = 'Esta es la Tienda de Uniformes Escolares';
   }
 
+  mostrarNombre(){
+    console.log(this.nombreDelParque);
+  }
+
   ngOnInit() {
   }
 
