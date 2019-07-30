@@ -19,3 +19,7 @@
 .btn-group-lg>.btn, .btn-lg {
     margin: 2px;
 }
+/*Panel de Administración*/
+.btn-group-sm>.btn, .btn-sm {
+    margin: 2px;
+}
