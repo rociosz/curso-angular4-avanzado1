@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { fadeIn } from '../animation';
 
 @Component({
   selector: 'profesores',
   templateUrl: './profesores.component.html',
-  styleUrls: ['./profesores.component.css']
+  animations: [fadeIn] 
 })
 export class ProfesoresComponent implements OnInit {
   title = 'Profesores';
