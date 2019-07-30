@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+declare var jQuery:any;
+declare var $:any;
+
 @Component({
   selector: 'tienda',
   templateUrl: './tienda.component.html',
@@ -24,6 +27,11 @@ export class TiendaComponent implements OnInit {
   }
 
   ngOnInit() {
+    $('#textojq').hide();
+     $('#botonjq').click(function(){
+        console.log('click desde JQUERY');
+        $('#textojq').slideToggle();
+     });
   }
 
 }
