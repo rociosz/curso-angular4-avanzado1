@@ -1,10 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { User } from '../../models/user';
+import { GLOBAL } from '../../services/global';
+import { UserService } from '../../services/user.service';
 
 @Component({
     selector: 'register',
-    templateUrl: './register.component.html'
+    templateUrl: './register.component.html',
+    providers: [UserService]
   })
   export class RegisterComponent implements OnInit {
     public title: string;
@@ -13,7 +16,7 @@ import { User } from '../../models/user';
     constructor(
         private _route: ActivatedRoute,
         private _router: Router,
-
+        private _userService: UserService
     ){
         this.title = 'Registro';
         this.user = new User('','','','','','ROLE_USER','');
