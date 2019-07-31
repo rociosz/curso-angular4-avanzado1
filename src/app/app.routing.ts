@@ -8,6 +8,9 @@ import { ContactoComponent } from './components/contacto/contacto.component';
 import { ProfesoresComponent } from './components/profesores/profesores.component';
 import { AlumnosComponent } from './components/alumnos/alumnos.component';
 
+import { RegisterComponent } from './components/register/register.component';
+import { LoginComponent } from './components/login/login.component';
+
 const appRoutes: Routes = [
     //{path: '', component: InicioComponent},
     {path: '', redirectTo: 'inicio', pathMatch: 'full'},
@@ -16,6 +19,8 @@ const appRoutes: Routes = [
     {path: 'contacto', component: ContactoComponent},
     {path: 'profesores', component: ProfesoresComponent},
     {path: 'tienda', component: TiendaComponent},
+    {path: 'registro', component: RegisterComponent},
+    {path: 'login', component: LoginComponent},
     {path: '**', component: InicioComponent},
 ];
 

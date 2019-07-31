@@ -20,6 +20,8 @@ import { ContactoComponent } from './components/contacto/contacto.component';
 import { ProfesoresComponent } from './components/profesores/profesores.component';
 import { AlumnosComponent } from './components/alumnos/alumnos.component';
 
+import { RegisterComponent } from './components/register/register.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,8 @@ import { AlumnosComponent } from './components/alumnos/alumnos.component';
     ContactoComponent,
     ProfesoresComponent,
     AlumnosComponent,
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
