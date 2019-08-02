@@ -10,8 +10,9 @@ import { UserService } from '../../services/user.service';
     providers: [UserService]
   })
   export class RegisterComponent implements OnInit {
-    public title: string;
+    public title: String;
     public user: User;
+    public status: String;
   
     constructor(
         private _route: ActivatedRoute,
@@ -26,8 +27,22 @@ import { UserService } from '../../services/user.service';
         console.log('register.component cargado !!');
     }
 
-    onSubmit(){
-      console.log(this.user);
+    onSubmit(registerForm){
+        //console.log(this.user);
+        this._userService.register(this.user).subscribe(
+          response => {
+            if(response.user && response.user._id){
+              this.status = 'success';
+              
+              this.user = new User('','','','','','ROLE_USER','');
+              registerForm.reset();
+            }else{
+              this.status = 'error';
+            }   
+          },
+          error => {
+            console.log(<any>error);
+          }
+        );
+      }
     }
-
-  }
