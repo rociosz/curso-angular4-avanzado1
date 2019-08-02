@@ -8,7 +8,9 @@
     <div class="alert alert-danger" *ngIf="status == 'error'">
         No te has registrado correctamente, <a [routerLink]="['/login']"></a>
     </div>
-  
+    
+    <br>
+
     <form #registerForm="ngForm" (ngSubmit)="onSubmit(registerForm)" class="col-lg-10">
       <p>
           <label>Nombre</label>
